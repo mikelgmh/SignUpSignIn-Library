@@ -5,10 +5,15 @@
  */
 package exceptions;
 
+import user.User;
+
 /**
  *
- * @author 2dam
+ * @author Iker de la Cruz
  */
 public class UserNotFoundException extends Exception {
 
+    public UserNotFoundException(User user) {
+        super("The inserted user does not exist in the database.");
+    }
 }
