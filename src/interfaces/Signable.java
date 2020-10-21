@@ -5,10 +5,15 @@
  */
 package interfaces;
 
+import user.User;
+
 /**
  *
  * @author 2dam
  */
 public interface Signable {
+    
+    public User signIn(User user);
+    public User signUp(User user);
     
 }
