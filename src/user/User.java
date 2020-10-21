@@ -12,6 +12,7 @@ import java.util.Date;
  * @author Iker
  */
 public class User {
+
     private Integer id;
     private String login;
     private String email;
@@ -21,6 +22,21 @@ public class User {
     private String password;
     private Date lastAccess;
     private Date lastPasswordChange;
+
+    public User(Integer id, String login, String email, String fullName, Boolean status, Integer privilege, String password, Date lastAccess, Date lastPasswordChange) {
+        this.id = id;
+        this.login = login;
+        this.email = email;
+        this.fullName = fullName;
+        this.status = status;
+        this.privilege = privilege;
+        this.password = password;
+        this.lastAccess = lastAccess;
+        this.lastPasswordChange = lastPasswordChange;
+    }
+
+    public User() {
+    }
 
     public Integer getId() {
         return id;
