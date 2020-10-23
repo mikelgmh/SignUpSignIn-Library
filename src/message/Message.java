@@ -12,13 +12,13 @@ import java.io.Serializable;
  * @author Imanol
  */
 public enum Message implements Serializable {
-    SIGNIN,
-    SIGNUP,
-    REGISTEROK, 
-    USEREXIST,
-    MAILEXIST,
-    LOGINOK,
-    LOGINERROR,
-    CONNECTIONERROR, 
-    MAXCONNECTIONSREACHED;
+    SIGN_IN,
+    SIGN_UP,
+    REGISTER_OK, 
+    USER_EXISTS,
+    MAIL_EXISTS,
+    LOGIN_OK,
+    LOGIN_ERROR,
+    CONNECTION_ERROR, 
+    MAX_CONNECTIONS_REACHED;
 }
