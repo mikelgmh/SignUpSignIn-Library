@@ -18,7 +18,7 @@ public enum Message implements Serializable {
     USEREXIST,
     MAILEXIST,
     LOGINOK,
-    ERRORUSER,
+    LOGINERROR,
     CONNECTIONERROR, 
     MAXCONNECTIONSREACHED;
 }
