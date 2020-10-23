@@ -14,20 +14,22 @@ import java.util.Date;
 public class User {
 
     private Integer id;
-    private String login;
+    private String username;
     private String email;
-    private String fullName;
+    private String firstName;
+    private String lastName;
     private Boolean status;
     private Integer privilege;
     private String password;
     private Date lastAccess;
     private Date lastPasswordChange;
 
-    public User(Integer id, String login, String email, String fullName, Boolean status, Integer privilege, String password, Date lastAccess, Date lastPasswordChange) {
+    public User(Integer id, String firstName, String lastName, String email, String fullName, Boolean status, Integer privilege, String password, Date lastAccess, Date lastPasswordChange) {
         this.id = id;
-        this.login = login;
+        this.username = username;
         this.email = email;
-        this.fullName = fullName;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.status = status;
         this.privilege = privilege;
         this.password = password;
@@ -46,16 +48,20 @@ public class User {
         this.id = id;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setUsername(String login) {
+        this.username = login;
     }
 
     public void setEmail(String email) {
         this.email = email;
     }
+    
+    public void setLastName(String lastName){
+        this.lastName = lastName;
+    }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public void setStatus(Boolean status) {
@@ -78,16 +84,20 @@ public class User {
         this.lastPasswordChange = lastPasswordChange;
     }
 
-    public String getLogin() {
-        return login;
+    public String getUsername() {
+        return username;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getFirstName() {
+        return firstName;
+    }
+    
+    public String getLastName(){
+        return lastName;
     }
 
     public Boolean getStatus() {
