@@ -5,10 +5,20 @@
  */
 package message;
 
+import java.io.Serializable;
+
 /**
  *
- * @author 2dam
+ * @author Imanol
  */
-public class Message {
-    
+public enum Message implements Serializable {
+    SIGNIN,
+    SIGNUP,
+    REGISTEROK, 
+    USEREXIST,
+    MAILEXIST,
+    LOGINOK,
+    ERRORUSER,
+    CONNECTIONERROR, 
+    MAXCONNECTIONSREACHED;
 }
