@@ -17,13 +17,13 @@ public class User {
     private String login;
     private String email;
     private String fullName;
-    private Boolean status;
-    private Integer privilege;
+    private UserStatus status;
+    private UserPrivilege privilege;
     private String password;
     private Date lastAccess;
     private Date lastPasswordChange;
 
-    public User(Integer id, String login, String email, String fullName, Boolean status, Integer privilege, String password, Date lastAccess, Date lastPasswordChange) {
+    public User(Integer id, String login, String email, String fullName, UserStatus status, UserPrivilege privilege, String password, Date lastAccess, Date lastPasswordChange) {
         this.id = id;
         this.login = login;
         this.email = email;
@@ -58,11 +58,11 @@ public class User {
         this.fullName = fullName;
     }
 
-    public void setStatus(Boolean status) {
+    public void setStatus(UserStatus status) {
         this.status = status;
     }
 
-    public void setPrivilege(Integer privilege) {
+    public void setPrivilege(UserPrivilege privilege) {
         this.privilege = privilege;
     }
 
@@ -90,11 +90,11 @@ public class User {
         return fullName;
     }
 
-    public Boolean getStatus() {
+    public UserStatus getStatus() {
         return status;
     }
 
-    public Integer getPrivilege() {
+    public UserPrivilege getPrivilege() {
         return privilege;
     }
 
