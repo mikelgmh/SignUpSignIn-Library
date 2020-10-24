@@ -5,20 +5,37 @@
  */
 package message;
 
-import java.io.Serializable;
+import user.User;
 
 /**
  *
  * @author Imanol
  */
-public enum Message implements Serializable {
-    SIGN_IN,
-    SIGN_UP,
-    REGISTER_OK, 
-    USER_EXISTS,
-    MAIL_EXISTS,
-    LOGIN_OK,
-    LOGIN_ERROR,
-    CONNECTION_ERROR, 
-    MAX_CONNECTIONS_REACHED;
+public class Message {
+    
+    private User user;
+    private TypeMessage type;
+
+    public Message(User user, TypeMessage type) {
+        this.user = user;
+        this.type = type;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public TypeMessage getType() {
+        return type;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public void setType(TypeMessage type) {
+        this.type = type;
+    }
+    
+    
 }
