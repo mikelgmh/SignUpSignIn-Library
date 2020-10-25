@@ -20,5 +20,6 @@ public enum TypeMessage implements Serializable {
     LOGIN_OK,
     LOGIN_ERROR,
     CONNECTION_ERROR, 
+    STOP_SERVER,
     MAX_CONNECTIONS_REACHED;
 }

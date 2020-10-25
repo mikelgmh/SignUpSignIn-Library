@@ -5,13 +5,14 @@
  */
 package message;
 
+import java.io.Serializable;
 import user.User;
 
 /**
  *
  * @author Imanol
  */
-public class Message {
+public class Message implements Serializable {
     
     private User user;
     private TypeMessage type;
