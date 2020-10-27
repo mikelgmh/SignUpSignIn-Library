@@ -5,15 +5,20 @@
  */
 package interfaces;
 
+import exceptions.ErrorClosingDatabaseResources;
+import exceptions.ErrorConnectingServerException;
+import exceptions.PasswordMissmatchException;
+import exceptions.UserNotFoundException;
+import java.sql.SQLException;
 import user.User;
 
 /**
  *
- * @author 2dam
+ * @author Imanol
  */
 public interface Signable {
     
-    public User signIn(User user);
+    public User signIn(User user) throws ErrorConnectingServerException, UserNotFoundException, SQLException, PasswordMissmatchException,ErrorClosingDatabaseResources;
     public User signUp(User user);
     
 }
