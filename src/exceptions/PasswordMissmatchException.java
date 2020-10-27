@@ -7,8 +7,11 @@ package exceptions;
 
 /**
  *
- * @author 2dam
+ * @author Iker de la Cruz
  */
 public class PasswordMissmatchException extends Exception {
 
+    public PasswordMissmatchException(String password) {
+        super("The password inserted doesn't match.");
+    }
 }

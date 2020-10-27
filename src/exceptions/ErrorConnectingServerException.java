@@ -7,8 +7,11 @@ package exceptions;
 
 /**
  *
- * @author 2dam
+ * @author Iker de la Cruz
  */
 public class ErrorConnectingServerException extends Exception {
 
+    public ErrorConnectingServerException() {
+        super("Error trying to connect to the server.");
+    }
 }

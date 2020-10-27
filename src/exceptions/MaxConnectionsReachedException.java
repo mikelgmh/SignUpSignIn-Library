@@ -7,8 +7,11 @@ package exceptions;
 
 /**
  *
- * @author 2dam
+ * @author Iker de la Cruz
  */
 public class MaxConnectionsReachedException extends Exception {
 
+    public MaxConnectionsReachedException(int maxConnections, int actualConnections) {
+        super("The server reached the maximum amount of connections. (" + actualConnections + "/" + maxConnections + ")");
+    }
 }
