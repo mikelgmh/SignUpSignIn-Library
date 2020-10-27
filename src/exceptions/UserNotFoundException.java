@@ -13,7 +13,7 @@ import user.User;
  */
 public class UserNotFoundException extends Exception {
 
-    public UserNotFoundException(User user) {
+    public UserNotFoundException() {
         super("The inserted user does not exist in the database.");
     }
 }

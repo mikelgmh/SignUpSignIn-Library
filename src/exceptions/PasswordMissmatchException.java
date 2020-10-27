@@ -11,7 +11,7 @@ package exceptions;
  */
 public class PasswordMissmatchException extends Exception {
 
-    public PasswordMissmatchException(String password) {
+    public PasswordMissmatchException() {
         super("The password inserted doesn't match.");
     }
 }

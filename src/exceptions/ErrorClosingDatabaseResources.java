@@ -7,11 +7,11 @@ package exceptions;
 
 /**
  *
- * @author Iker de la Cruz
+ * @author Usuario
  */
-public class ErrorConnectingServerException extends Exception {
-
-    public ErrorConnectingServerException() {
-        super("Error trying to access database.");
+public class ErrorClosingDatabaseResources extends Exception {
+    
+    public ErrorClosingDatabaseResources() {
+        super("Fatal error releasing database connection.");
     }
 }
