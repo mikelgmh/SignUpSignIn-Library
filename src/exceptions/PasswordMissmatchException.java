@@ -5,13 +5,22 @@
  */
 package exceptions;
 
+import message.TypeMessage;
+
 /**
  *
  * @author Iker de la Cruz
  */
-public class PasswordMissmatchException extends Exception {
+public class PasswordMissmatchException extends Exception implements ExceptionMethods {
+
+    private final TypeMessage messageType = TypeMessage.CONNECTION_ERROR;
 
     public PasswordMissmatchException(String password) {
         super("The password inserted doesn't match.");
+    }
+
+    @Override
+    public TypeMessage getMessageType() {
+        return messageType;
     }
 }

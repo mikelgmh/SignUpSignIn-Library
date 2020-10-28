@@ -9,18 +9,19 @@ import message.TypeMessage;
 
 /**
  *
- * @author Iker de la Cruz
+ * @author Mikel
  */
-public class ErrorConnectingServerException extends Exception implements ExceptionMethods {
+public class ErrorConnectingDatabaseException extends Exception implements ExceptionMethods{
 
-    private final TypeMessage messageType = TypeMessage.CONNECTION_ERROR;
+    private final TypeMessage messageType = TypeMessage.DATABASE_ERROR;
 
-    public ErrorConnectingServerException() {
-        super("Error trying to connect to the server.");
+    public ErrorConnectingDatabaseException() {
+        super("Error connecting database.");
     }
 
     @Override
     public TypeMessage getMessageType() {
         return messageType;
     }
+
 }

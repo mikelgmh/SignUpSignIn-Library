@@ -5,13 +5,22 @@
  */
 package exceptions;
 
+import message.TypeMessage;
+
 /**
  *
  * @author Iker de la Cruz
  */
-public class MaxConnectionsReachedException extends Exception {
+public class MaxConnectionsReachedException extends Exception implements ExceptionMethods {
+
+    private final TypeMessage messageType = TypeMessage.MAX_CONNECTIONS_REACHED;
 
     public MaxConnectionsReachedException(int maxConnections, int actualConnections) {
         super("The server reached the maximum amount of connections. (" + actualConnections + "/" + maxConnections + ")");
+    }
+
+    @Override
+    public TypeMessage getMessageType() {
+        return messageType;
     }
 }

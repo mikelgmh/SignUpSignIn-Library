@@ -5,6 +5,9 @@
  */
 package interfaces;
 
+import exceptions.ErrorConnectingServerException;
+import exceptions.UserAlreadyExistException;
+import java.sql.SQLException;
 import user.User;
 
 /**
@@ -14,6 +17,6 @@ import user.User;
 public interface Signable {
     
     public User signIn(User user);
-    public User signUp(User user);
+    public User signUp(User user) throws ErrorConnectingServerException, UserAlreadyExistException;
     
 }

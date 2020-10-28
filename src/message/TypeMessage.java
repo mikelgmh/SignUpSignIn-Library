@@ -16,10 +16,12 @@ public enum TypeMessage implements Serializable {
     SIGN_UP,
     REGISTER_OK, 
     USER_EXISTS,
+    USER_DOES_NOT_EXIST,
     MAIL_EXISTS,
     LOGIN_OK,
     LOGIN_ERROR,
-    CONNECTION_ERROR, 
+    CONNECTION_ERROR,
+    DATABASE_ERROR,
     STOP_SERVER,
     MAX_CONNECTIONS_REACHED;
 }
