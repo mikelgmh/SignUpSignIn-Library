@@ -12,15 +12,12 @@ import user.User;
  *
  * @author Iker de la Cruz
  */
-public class UserAlreadyExistException extends Exception implements ExceptionMethods{
+public class UserAlreadyExistException extends Exception {
 
-    private final TypeMessage messageType = TypeMessage.USER_EXISTS;
 
     public UserAlreadyExistException(User user) {
         super("The user already exists in the database.");
     }
 
-    public TypeMessage getMessageType() {
-        return messageType;
-    }
+ 
 }

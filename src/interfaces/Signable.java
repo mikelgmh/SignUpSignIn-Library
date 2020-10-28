@@ -7,7 +7,9 @@ package interfaces;
 
 import exceptions.ErrorClosingDatabaseResources;
 import exceptions.ErrorConnectingServerException;
+import exceptions.ErrorConnectingDatabaseException;
 import exceptions.PasswordMissmatchException;
+import exceptions.QueryException;
 import exceptions.UserNotFoundException;
 import exceptions.UserAlreadyExistException;
 import java.sql.SQLException;
@@ -20,6 +22,6 @@ import user.User;
 public interface Signable {
     
     public User signIn(User user) throws ErrorConnectingServerException, UserNotFoundException, SQLException, PasswordMissmatchException,ErrorClosingDatabaseResources;
-    public User signUp(User user) throws ErrorConnectingServerException, UserAlreadyExistException;
+    public User signUp(User user) throws ErrorConnectingDatabaseException, UserAlreadyExistException,QueryException;
     
 }
