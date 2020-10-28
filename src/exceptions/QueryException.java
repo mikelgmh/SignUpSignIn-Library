@@ -5,13 +5,15 @@
  */
 package exceptions;
 
-import message.TypeMessage;
-
 /**
  *
  * @author Mikel
  */
-public interface ExceptionMethods {
+public class QueryException extends Exception {
 
-    public TypeMessage getMessageType();
+    public QueryException() {
+        super("Query error.");
+
+    }
+
 }

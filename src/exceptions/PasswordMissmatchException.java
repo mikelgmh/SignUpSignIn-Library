@@ -11,16 +11,12 @@ import message.TypeMessage;
  *
  * @author Iker de la Cruz
  */
-public class PasswordMissmatchException extends Exception implements ExceptionMethods {
+public class PasswordMissmatchException extends Exception {
 
-    private final TypeMessage messageType = TypeMessage.CONNECTION_ERROR;
 
     public PasswordMissmatchException() {
         super("The password inserted doesn't match.");
     }
 
-    @Override
-    public TypeMessage getMessageType() {
-        return messageType;
-    }
+
 }
