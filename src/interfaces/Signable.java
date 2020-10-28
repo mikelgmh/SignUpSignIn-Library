@@ -21,7 +21,7 @@ import user.User;
  */
 public interface Signable {
     
-    public User signIn(User user) throws ErrorConnectingServerException, UserNotFoundException, SQLException, PasswordMissmatchException,ErrorClosingDatabaseResources;
+    public User signIn(User user) throws ErrorConnectingDatabaseException, UserNotFoundException,PasswordMissmatchException,ErrorClosingDatabaseResources;
     public User signUp(User user) throws ErrorConnectingDatabaseException, UserAlreadyExistException,QueryException;
     
 }
