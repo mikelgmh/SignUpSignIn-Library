@@ -5,13 +5,22 @@
  */
 package exceptions;
 
+import message.TypeMessage;
+
 /**
  *
  * @author Iker de la Cruz
  */
-public class ErrorConnectingServerException extends Exception {
+public class ErrorConnectingServerException extends Exception implements ExceptionMethods {
+
+    private final TypeMessage messageType = TypeMessage.CONNECTION_ERROR;
 
     public ErrorConnectingServerException() {
         super("Error trying to access database.");
+    }
+
+    @Override
+    public TypeMessage getMessageType() {
+        return messageType;
     }
 }

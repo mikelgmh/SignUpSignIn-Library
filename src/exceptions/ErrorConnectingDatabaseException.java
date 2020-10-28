@@ -6,18 +6,17 @@
 package exceptions;
 
 import message.TypeMessage;
-import user.User;
 
 /**
  *
- * @author Iker de la Cruz
+ * @author Mikel
  */
-public class UserNotFoundException extends Exception implements ExceptionMethods {
+public class ErrorConnectingDatabaseException extends Exception implements ExceptionMethods{
 
-    private final TypeMessage messageType = TypeMessage.USER_DOES_NOT_EXIST;
+    private final TypeMessage messageType = TypeMessage.DATABASE_ERROR;
 
-    public UserNotFoundException() {
-        super("The inserted user does not exist in the database.");
+    public ErrorConnectingDatabaseException() {
+        super("Error connecting database.");
     }
 
     @Override
