@@ -13,7 +13,11 @@ import user.User;
  * @author Imanol
  */
 public class Message implements Serializable {
-    
+
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private User user;
     private TypeMessage type;
 
@@ -37,6 +41,5 @@ public class Message implements Serializable {
     public void setType(TypeMessage type) {
         this.type = type;
     }
-    
-    
+
 }

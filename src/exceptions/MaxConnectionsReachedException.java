@@ -5,18 +5,19 @@
  */
 package exceptions;
 
-import message.TypeMessage;
-
 /**
  *
  * @author Iker de la Cruz
  */
-public class MaxConnectionsReachedException extends Exception  {
+public class MaxConnectionsReachedException extends Exception {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
     public MaxConnectionsReachedException(int maxConnections, int actualConnections) {
-        super("The server reached the maximum amount of connections. (" + actualConnections + "/" + maxConnections + ")");
+        super("The server reached the maximum amount of connections. (" + actualConnections + "/" + maxConnections
+                + ")");
     }
-
-
 }

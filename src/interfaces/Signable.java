@@ -6,13 +6,11 @@
 package interfaces;
 
 import exceptions.ErrorClosingDatabaseResources;
-import exceptions.ErrorConnectingServerException;
 import exceptions.ErrorConnectingDatabaseException;
 import exceptions.PasswordMissmatchException;
 import exceptions.QueryException;
 import exceptions.UserNotFoundException;
 import exceptions.UserAlreadyExistException;
-import java.sql.SQLException;
 import user.User;
 
 /**

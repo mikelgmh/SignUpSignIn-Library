@@ -5,18 +5,18 @@
  */
 package exceptions;
 
-import message.TypeMessage;
-
 /**
  *
  * @author Iker de la Cruz
  */
 public class PasswordMissmatchException extends Exception {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
     public PasswordMissmatchException() {
         super("The password inserted doesn't match.");
     }
-
-
 }

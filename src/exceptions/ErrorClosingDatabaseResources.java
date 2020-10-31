@@ -10,7 +10,12 @@ package exceptions;
  * @author Usuario
  */
 public class ErrorClosingDatabaseResources extends Exception {
-    
+
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+
     public ErrorClosingDatabaseResources() {
         super("Fatal error releasing database connection.");
     }

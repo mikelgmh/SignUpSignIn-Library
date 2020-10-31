@@ -5,17 +5,18 @@
  */
 package exceptions;
 
-import message.TypeMessage;
-import user.User;
-
 /**
  *
  * @author Iker de la Cruz
  */
 public class UserNotFoundException extends Exception {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+
     public UserNotFoundException() {
         super("The inserted user does not exist in the database.");
     }
-
 }

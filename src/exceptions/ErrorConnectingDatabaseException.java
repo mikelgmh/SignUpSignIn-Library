@@ -5,14 +5,16 @@
  */
 package exceptions;
 
-import message.TypeMessage;
-
 /**
  *
  * @author Mikel
  */
 public class ErrorConnectingDatabaseException extends Exception {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
     public ErrorConnectingDatabaseException() {
         super("Error connecting database.");

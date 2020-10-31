@@ -12,8 +12,12 @@ import java.util.Date;
  *
  * @author Iker
  */
-public class User implements Serializable{
+public class User implements Serializable {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private Integer id;
     private String login;
     private String email;
@@ -24,7 +28,8 @@ public class User implements Serializable{
     private Date lastAccess;
     private Date lastPasswordChange;
 
-    public User(Integer id, String login, String email, String fullName, UserStatus status, UserPrivilege privilege, String password, Date lastAccess, Date lastPasswordChange) {
+    public User(Integer id, String login, String email, String fullName, UserStatus status, UserPrivilege privilege,
+            String password, Date lastAccess, Date lastPasswordChange) {
         this.id = id;
         this.login = login;
         this.email = email;
