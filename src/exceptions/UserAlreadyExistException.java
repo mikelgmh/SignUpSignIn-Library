@@ -4,8 +4,6 @@
  * and open the template in the editor.
  */
 package exceptions;
-
-import message.TypeMessage;
 import user.User;
 
 /**
@@ -14,10 +12,8 @@ import user.User;
  */
 public class UserAlreadyExistException extends Exception {
 
-
     public UserAlreadyExistException(User user) {
         super("The user already exists in the database.");
     }
 
- 
 }
