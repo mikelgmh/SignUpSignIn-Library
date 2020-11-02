@@ -7,6 +7,7 @@ package interfaces;
 
 import exceptions.ErrorClosingDatabaseResources;
 import exceptions.ErrorConnectingDatabaseException;
+import exceptions.ErrorConnectingServerException;
 import exceptions.PasswordMissmatchException;
 import exceptions.QueryException;
 import exceptions.UserNotFoundException;
@@ -19,7 +20,7 @@ import user.User;
  */
 public interface Signable {
     
-    public User signIn(User user) throws ErrorConnectingDatabaseException, UserNotFoundException, PasswordMissmatchException, ErrorClosingDatabaseResources, QueryException;
-    public User signUp(User user) throws ErrorConnectingDatabaseException, UserAlreadyExistException,QueryException;
+    public User signIn(User user) throws ErrorConnectingDatabaseException, UserNotFoundException, PasswordMissmatchException, ErrorClosingDatabaseResources, QueryException, ErrorConnectingServerException;
+    public User signUp(User user) throws ErrorConnectingDatabaseException, UserAlreadyExistException, QueryException, ErrorConnectingServerException;
     
 }
