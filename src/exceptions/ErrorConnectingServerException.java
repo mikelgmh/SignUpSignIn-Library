@@ -15,7 +15,7 @@ public class ErrorConnectingServerException extends Exception   {
 
 
     public ErrorConnectingServerException() {
-        super("Error trying to access database.");
+        super("Error trying to connect to the server.");
     }
 
  

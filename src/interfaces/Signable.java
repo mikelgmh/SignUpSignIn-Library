@@ -12,7 +12,6 @@ import exceptions.PasswordMissmatchException;
 import exceptions.QueryException;
 import exceptions.UserNotFoundException;
 import exceptions.UserAlreadyExistException;
-import java.sql.SQLException;
 import user.User;
 
 /**
@@ -20,8 +19,9 @@ import user.User;
  * @author Imanol
  */
 public interface Signable {
-    
-    public User signIn(User user) throws ErrorConnectingDatabaseException, UserNotFoundException, PasswordMissmatchException, ErrorClosingDatabaseResources, QueryException;
-    public User signUp(User user) throws ErrorConnectingDatabaseException, UserAlreadyExistException,QueryException;
-    
+
+    public User signIn(User user) throws ErrorConnectingDatabaseException, UserNotFoundException, PasswordMissmatchException, ErrorClosingDatabaseResources, ErrorConnectingServerException, QueryException;
+
+    public User signUp(User user) throws UserAlreadyExistException, ErrorConnectingServerException, ErrorConnectingDatabaseException, QueryException;
+
 }
