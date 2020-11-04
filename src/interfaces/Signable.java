@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package interfaces;
 
 import exceptions.ErrorClosingDatabaseResources;
@@ -15,7 +10,7 @@ import exceptions.UserAlreadyExistException;
 import user.User;
 
 /**
- *
+ * The interface with the application use cases.
  * @author Imanol
  */
 public interface Signable {

@@ -1,14 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package exceptions;
 
 import message.TypeMessage;
 
 /**
- *
+ * Custom error that is generated when access error to database 
+ * 
  * @author Mikel
  */
 public class ErrorConnectingDatabaseException extends Exception {

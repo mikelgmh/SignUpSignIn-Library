@@ -9,7 +9,9 @@ import java.io.Serializable;
 import user.User;
 
 /**
- *
+ * Message contains TypeMessage and User class. This object is used to communicate
+ * between applications
+ * 
  * @author Imanol
  */
 public class Message implements Serializable {

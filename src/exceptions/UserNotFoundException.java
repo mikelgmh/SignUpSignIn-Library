@@ -1,16 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package exceptions;
 
-import message.TypeMessage;
-import user.User;
 
 /**
- *
- * @author Iker de la Cruz
+ * Custom error that is generated when the user is not found on database
+ * 
+ * @author Iker
  */
 public class UserNotFoundException extends Exception {
 
