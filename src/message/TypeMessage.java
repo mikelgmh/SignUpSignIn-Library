@@ -20,5 +20,7 @@ public enum TypeMessage implements Serializable {
     DATABASE_ERROR,
     STOP_SERVER,
     QUERY_ERROR,
+    EMAIL_EXISTS,
+    USER_AND_EMAIL_EXIST,
     MAX_CONNECTIONS_REACHED;
 }
